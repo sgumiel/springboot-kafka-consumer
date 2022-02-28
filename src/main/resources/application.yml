@@ -5,3 +5,6 @@ spring:
 kafka:
   consumer:
     groupId: consumer-app
+
+topics:
+  pelicula: topic-pelicula

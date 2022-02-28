@@ -14,7 +14,7 @@ public class PeliculaConsumer {
 
     private final ObjectMapper objectMapper;
 
-    @KafkaListener(topics = "pelicula-topic")
+    @KafkaListener(topics = "${topics.pelicula}")
     public void peliculaListener(String peliculaJson) throws JsonProcessingException {
 
         final var pelicula = this.objectMapper.readValue(peliculaJson, new TypeReference<Pelicula>() {});

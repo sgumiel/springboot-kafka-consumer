@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka:
+  consumer:
+    groupId: consumer-app-test
+
+topics:
+  pelicula: topic-pelicula-test
